@@ -1,0 +1,471 @@
+
+/* ===== GOOGLE CALENDAR STYLES ===== */
+
+
+.calendar-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0;
+  border: 2px solid var(--jag-accent);
+  border-radius: 8px;
+  background-color: var(--background-white);
+}
+
+
+.google-calendar-responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+@media (min-width: 768px) {
+  .calendar-container {
+    padding-bottom: 56.25%;
+  }
+}
+
+/* ===== TABS STYLES ===== */
+
+
+.nav-tabs {
+  border-bottom: 2px solid var(--jag-accent);
+  margin-bottom: 20px;
+}
+
+
+.nav-tabs .nav-link {
+  color: var(--text-dark);
+  border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+
+.nav-tabs .nav-link:hover {
+  background-color: var(--background-light);
+  color: var(--jag-accent);
+}
+
+
+.nav-tabs .nav-link.active {
+  color: var(--jag-black);
+  background-color: var(--jag-gold);
+  border: none;
+  border-radius: 0;
+}
+
+
+.tab-content {
+  padding: 20px 0;
+}
+
+
+.tab-pane .class-card {
+  margin-bottom: 0;
+}
+/* ===== CSS VARIABLES FOR JAGTRACK THEME ===== */
+/* Official Jefferson Academy Colors: Black & Gold */
+
+
+
+
+:root {
+  /* Primary Brand Colors */
+  --jag-black: #000000;   /* Jefferson Academy Black */
+  --jag-gold: #D7CD89;    /* Jefferson Academy Gold */
+  --jag-accent: #b1a363;  /* Darker gold accent */
+
+  /* Text Colors */
+  --text-dark: #fafae0;
+  --text-light: #faecec;
+  --text-muted: #f7f3e3;
+
+  /* Background Colors */
+  --background-light: #11110f;  /* Light gold background */
+  --background-white: #ffffff;
+  --background-dark: #d3e1f0;
+}
+[data-theme="light"] {
+  /* Primary Brand Colors */
+  --jag-black: #FFD1DC;
+  --jag-gold: #00FFFF;
+  --jag-accent: #E6E6FA;
+
+
+  /* Text Colors */
+  --text-dark: #121212;
+  --text-light: #110407;
+  --text-muted: #E6E6FA;
+
+
+  /* Background Colors */
+  --background-light:#cfcfff ;
+  --background-white:#AEC6CF ;
+  --background-dark: #00FFFF;
+}
+[data-theme="JA-Spirit"] {
+  /* Primary Brand Colors */
+  --jag-black: #black;
+  --jag-gold: #gold;
+  --jag-accent: #white;
+
+
+  /* Text Colors */
+  --text-dark: #white;
+  --text-light: #gold;
+  --text-muted: #yellow;
+
+
+  /* Background Colors */
+  --background-light: #black;
+  --background-white: #white;
+  --background-dark: #yellow;
+}
+
+
+/* ===== BODY & GENERAL STYLES ===== */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+/* ===== HEADER STYLES ===== */
+
+.jumbotron {
+  background: linear-gradient(135deg, var(--jag-black) 0%, #222222 100%);
+  color: var(--text-light);
+  margin-bottom: 30px;
+  padding: 60px 30px;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.jumbotron h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--jag-gold);
+}
+
+/* ===== CLASS CARD STYLES ===== */
+
+.class-card {
+  background-color: var(--background-white);
+  border-left: 4px solid var(--jag-accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.class-card:hover {
+  border-left-color: var(--jag-black);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.class-card h4 {
+  color: var(--jag-black);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.class-card h5 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.class-card p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.class-card a {
+  color: var(--jag-black);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.class-card a:hover {
+  color: var(--jag-gold);
+  text-decoration: underline;
+}
+
+/* ===== CONTENT ROW SPACING ===== */
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.row-content:last-child {
+  border-bottom: none;
+}
+
+/* ===== FOOTER STYLES ===== */
+
+footer {
+  background-color: var(--jag-black);
+  color: var(--text-light);
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+footer h5 {
+  color: var(--jag-gold);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--jag-gold);
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+/* ===== GOOGLE CALENDAR STYLES ===== */
+
+
+.calendar-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0;
+  border: 2px solid var(--jag-accent);
+  border-radius: 8px;
+  background-color: var(--background-white);
+}
+
+
+.google-calendar-responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+@media (min-width: 768px) {
+  .calendar-container-desktop {
+    padding-bottom: 56.25%;
+    display: block;
+    height: 600px;
+  
+    iframe {
+         border-color: red !important;
+    }
+  
+    
+
+  }
+
+   .calendar-container-mobile {
+    padding-bottom: 56.25%;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+ .calendar-container-desktop {
+    padding-bottom: 56.25%;
+    display: none;
+    height: 600px;
+  }
+
+   .calendar-container-mobile {
+    padding-bottom: 56.25%;
+    display: block;
+    height: 400px;
+
+  }
+}
+#theme-toggle {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+
+#theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.profile-image {
+  width: 150px; height: 150px; object-fit: cover;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--jag-black) 0%, var(--jag-accent) 100%);
+  color: var(--text-light);
+  padding: 80px 20px;
+}
+
+
+.about-section {
+  padding: 40px 0;
+}
+
+/* ===== ABOUT ME PAGE STYLES ===== */
+
+
+.about-hero {
+  background: linear-gradient(135deg, var(--jag-black) 0%, var(--jag-accent) 100%);
+  color: var(--text-light);
+  padding: 80px 20px;
+}
+
+
+.about-section {
+  padding: 40px 0;
+}
+.profile-image {
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+  border: 5px solid var(--jag-gold);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.class-card {
+ background-color: var(--background-white);
+ border-left: 4px solid var(--jag-accent);
+ border-radius: 8px;
+ padding: 1.5rem;
+ margin-bottom: 1.5rem;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ transition: all 0.3s ease;
+}
+
+
+.class-card:hover {
+ border-left-color: var(--jag-black);
+ transform: translateY(-3px);
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.class-card h4 {
+ color: var(--jag-black);
+ font-weight: bold;
+ margin-bottom: 0.5rem;
+}
+
+
+.class-card h5 {
+ color: var(--text-dark);
+ font-size: 1.25rem;
+ margin-bottom: 0.75rem;
+}
+
+
+.class-card p {
+ color: var(--text-muted);
+ margin-bottom: 0;
+}
+
+
+.class-card a {
+ color: var(--jag-black);
+ text-decoration: none;
+ font-weight: 600;
+}
+
+
+.class-card a:hover {
+ color: var(--jag-gold);
+ text-decoration: underline;
+}
+
+
+/* ===== CONTENT ROW SPACING ===== */
+
+
+.row-content {
+ padding: 50px 0;
+ border-bottom: 1px solid #e9ecef;
+}
+
+
+.row-content:last-child {
+ border-bottom: none;
+}
+
+
+/* ===== FOOTER STYLES ===== */
+
+
+footer {
+ background-color: var(--jag-black);
+ color: var(--text-light);
+ padding: 30px 0;
+ margin-top: 50px;
+}
+
+
+footer h5 {
+ color: var(--jag-gold);
+ font-weight: bold;
+ margin-bottom: 15px;
+}
+
+
+footer a {
+ color: var(--text-light);
+ text-decoration: none;
+ transition: color 0.3s ease;
+}
+
+
+footer a:hover {
+ color: var(--jag-gold);
+}
+
+
+footer ul {
+ padding-left: 0;
+}
+
+
+footer ul li {
+ list-style: none;
+ margin-bottom: 8px;
+}
+
+.menu-food-image {
+  width: 80px;
+  height: 60px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
