@@ -1,1 +1,2 @@
-# Sadhana-Capstone-Food
+# Sadhana-Capstone-Food 
+JA Food Project
